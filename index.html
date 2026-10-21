@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA - Calculadora de IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="container" role="main">
+        
+        <div class="nvidia-logo">
+            <svg class="nvidia-icon" viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#76b900" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.15 16.5c-2.45-.25-4.43-2.12-4.78-4.55h2.08c.32 1.5 1.58 2.68 3.09 2.9v1.65zm4.07-1.65c1.51-.22 2.77-1.4 3.09-2.9h2.08c-.35 2.43-2.33 4.3-4.78 4.55v-1.65zm-4.07-11.35v-1.65c2.45.25 4.43 2.12 4.78 4.55h-2.08c-.32-1.5-1.58-2.68-3.09-2.9zm-4.07 2.9c-.35-2.43 2.33-4.3 4.78-4.55v1.65c-1.51.22-2.77 1.4-3.09 2.9h-1.69z"/>
+            </svg>
+            <span class="nvidia-text">NVIDIA</span>
+        </div>
+
+        <p class="subtitle">Calculadora de Índice de Massa Corporal</p>
+
+        <div class="form-group">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" step="0.1" placeholder="Ex: 70.5" min="0" aria-label="Digite seu peso em quilogramas">
+        </div>
+
+        <div class="form-group">
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75" min="0" aria-label="Digite sua altura em metros">
+        </div>
+
+        <div class="button-group">
+            <button id="calcularBtn" class="btn-primary">Calcular IMC</button>
+            <button id="limparBtn" class="btn-secondary" title="Limpar campos">Limpar</button>
+        </div>
+
+        <div id="resultado" class="resultado oculto" aria-live="polite"></div>
+    </main>
+
+
+    <footer>
+        Desenvolvido por: [Seu Nome Completo]
+    </footer>
+
+    
+    <script src="addss.js"></script>
+</body>
+</html>
